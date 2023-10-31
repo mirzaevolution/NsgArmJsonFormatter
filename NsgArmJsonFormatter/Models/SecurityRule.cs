@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace NsgArmMarkdownGenerator.Models
+namespace NsgArmJsonFormatter.Models
 {
     public partial class SecurityRule
     {

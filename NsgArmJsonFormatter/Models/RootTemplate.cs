@@ -2,12 +2,12 @@
 
 using Newtonsoft.Json;
 
-namespace NsgArmMarkdownGenerator.Models
+namespace NsgArmJsonFormatter.Models
 {
     public partial class RootTemplate
     {
         [JsonProperty("$schema")]
-        public Uri? Schema { get; set; }
+        public string? Schema { get; set; }
 
         [JsonProperty("contentVersion")]
 

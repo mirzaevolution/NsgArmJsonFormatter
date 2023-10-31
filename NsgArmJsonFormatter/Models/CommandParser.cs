@@ -1,13 +1,10 @@
 ﻿using CommandLine;
 
-namespace NsgArmMarkdownGenerator.Models
+namespace NsgArmJsonFormatter.Models
 {
     public class CommandParser
     {
-        [Option("input-string", HelpText = "Input arm json template as string", Required = true)]
-        public string? InputString { get; set; }
-
-        [Option("output-file", HelpText = "Output file location", Required = true)]
-        public string? OutputFile { get; set; }
+        [Option("file-location", HelpText = "File location of json arm template file", Required = true)]
+        public string? FileLocation { get; set; }
     }
 }
