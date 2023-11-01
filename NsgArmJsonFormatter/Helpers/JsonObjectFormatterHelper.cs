@@ -21,7 +21,7 @@ namespace NsgArmJsonFormatter.Helpers
                     }) ?? new RootTemplate();
                 if (rootTemplate != null)
                 {
-                    if (rootTemplate != null && rootTemplate.Resources != null && rootTemplate.Resources.Count > 0)
+                    if (rootTemplate.Resources != null && rootTemplate.Resources.Count > 0)
                     {
                         rootTemplate.Resources = new List<Resource>
                         {
