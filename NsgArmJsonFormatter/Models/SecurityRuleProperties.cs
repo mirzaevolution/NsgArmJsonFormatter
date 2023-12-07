@@ -7,17 +7,23 @@ namespace NsgArmJsonFormatter.Models
         [JsonProperty("protocol")]
         public string? Protocol { get; set; }
 
-        [JsonProperty("sourcePortRange")]
+        [JsonProperty("sourcePortRange", NullValueHandling = NullValueHandling.Ignore)]
         public string? SourcePortRange { get; set; }
 
-        [JsonProperty("destinationPortRange")]
+        [JsonProperty("destinationPortRange", NullValueHandling = NullValueHandling.Ignore)]
         public string? DestinationPortRange { get; set; }
 
-        [JsonProperty("sourceAddressPrefix")]
+        [JsonProperty("sourceAddressPrefix", NullValueHandling = NullValueHandling.Ignore)]
         public string? SourceAddressPrefix { get; set; }
 
-        [JsonProperty("destinationAddressPrefix")]
+        [JsonProperty("sourceApplicationSecurityGroups", NullValueHandling = NullValueHandling.Ignore)]
+        public List<ApplicationSecurityGroup> SourceApplicationSecurityGroups { get; set; } = new List<ApplicationSecurityGroup>();
+
+        [JsonProperty("destinationAddressPrefix", NullValueHandling = NullValueHandling.Ignore)]
         public string? DestinationAddressPrefix { get; set; }
+
+        [JsonProperty("destinationApplicationSecurityGroups", NullValueHandling = NullValueHandling.Ignore)]
+        public List<ApplicationSecurityGroup> DestinationApplicationSecurityGroups { get; set; } = new List<ApplicationSecurityGroup>();
 
         [JsonProperty("access")]
         public string? Access { get; set; }

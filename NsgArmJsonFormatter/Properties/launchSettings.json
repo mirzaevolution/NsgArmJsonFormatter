@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NsgArmJsonFormatter": {
+      "commandName": "Project",
+      "commandLineArgs": "--file-location=\"D:\\2021\\Downloads\\Chrome\\ExportedTemplate-test-rg-2\\test\\nsg-d-alex7-SN-alex7-4d7g7gx3qg2rs.json\""
+    }
+  }
+}
